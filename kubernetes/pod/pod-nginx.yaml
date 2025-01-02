@@ -1,0 +1,20 @@
+## Nginx Pod
+apiVersion: v1
+kind: Pod
+metadata:
+name: my-app-pod
+labels:
+app: my-app
+spec:
+containers:
+- name: my-app-container
+  image: nginx:1.21
+  ports:
+    - containerPort: 80
+      resources:
+      limits:
+      memory: "256Mi"
+      cpu: "500m"
+      requests:
+      memory: "128Mi"
+      cpu: "250m"
