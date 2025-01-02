@@ -10,4 +10,4 @@ This Pod runs an NGINX container serving static content.
 #### Apply the Pod
 To deploy this Pod, run:
 ```bash
-kubectl apply -f pods/my-app-pod.yaml
+kubectl apply -f pods/pod-nginx.yaml
